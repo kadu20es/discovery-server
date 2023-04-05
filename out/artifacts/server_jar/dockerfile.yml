@@ -1,0 +1,5 @@
+FROM openjdk:17
+WORKDIR /app
+EXPOSE 8082
+COPY . .
+ENTRYPOINT [ "java", "-jar", "gateway-0.0.1-SNAPSHOT" ]
